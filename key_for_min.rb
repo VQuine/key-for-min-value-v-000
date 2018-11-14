@@ -9,8 +9,8 @@ def key_for_min_value(hash)
     val_dump != nil && v < val_dump ? val_dump = v : val_dump
     val_dump == v ? key_dump = k : nil
   end
-  
-  
+
+
   return key_dump
 
 end
