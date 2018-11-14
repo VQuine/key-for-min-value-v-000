@@ -11,7 +11,7 @@ def key_for_min_value(hash)
     elsif val_dump != nil && v < val_dump
       val_dump = v
     elsif val_dump == v
-      key_dump = k
+      key_dump << k
     else
       return nil
     end
