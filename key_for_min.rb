@@ -6,16 +6,19 @@ def key_for_min_value(hash)
   val_dump = nil
   key_dump =
 
+  if hash == {} || hash = nil
+    return nil
+  else 
+      hash.each do |k, v|
 
-  hash.each do |k, v|
-
-    if val_dump == nil
-      val_dump = v
-    elsif val_dump != nil && v < val_dump
-      val_dump = v
-    else
-      nil
-    end
+        if val_dump == nil
+          val_dump = v
+        elsif val_dump != nil && v < val_dump
+          val_dump = v
+        else
+          nil
+        end
+      end
 
   end
 
