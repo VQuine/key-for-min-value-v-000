@@ -8,7 +8,7 @@ def key_for_min_value(hash)
 
   if hash == {} || hash = nil
     return nil
-  else 
+  else
       hash.each do |k, v|
 
         if val_dump == nil
@@ -20,13 +20,13 @@ def key_for_min_value(hash)
         end
       end
 
-  end
 
-  hash.each do |k, v|
-    if hash[k] == val_dump
-      return k
-    else
-      nil
+    hash.each do |k, v|
+      if hash[k] == val_dump
+        return k
+      else
+        nil
+      end
     end
   end
 
